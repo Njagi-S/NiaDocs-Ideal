@@ -1,0 +1,198 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.react-calendar{
+    width: 100% !important;
+    border: none !important;
+    font-family: "Inter" sans-serif !important;
+}
+.react-calendar__tile--active {
+    background-color: transparent !important;
+    color:#74d4f7 !important;
+    font-weight: bold;
+}
+
+
+.react-calendar__tile--now {
+    background-color: transparent !important;
+    color: #584fcf !important;
+    font-weight: bold;
+}
+
+/* Hover state for non-active tiles */
+.react-calendar__tile:enabled:hover,
+.react-calendar__tile:enabled:focus {
+    background-color: transparent !important;
+    color: #FAE27C !important;
+    font-weight:bold;
+}
+
+/* Specific hover for active tiles - keep the active color */
+.react-calendar__tile--active:enabled:hover,
+.react-calendar__tile--active:enabled:focus {
+    background-color: transparent !important; /* Keep active color on hover */
+    color: #74d4f7 !important;
+    font-weight: bold ;
+}
+.react-calendar__navigation__label {
+    background-color: transparent !important;
+    border: none !important;
+    transition: transform 0.2s ease !important;
+}
+
+.react-calendar__navigation__label__labelText {
+    color: inherit !important;
+    font-weight: normal !important;
+    transition: all 0.2s ease !important;
+}
+
+/* Hover effect */
+.react-calendar__navigation__label:hover {
+    background-color: transparent !important;
+    transform: scale(1.1) !important; /* Zoom in effect */
+}
+
+.react-calendar__navigation__label:hover .react-calendar__navigation__label__labelText {
+    color: black !important;
+    font-weight: 900 !important; /* Very bold on hover */
+}
+
+/* Active/clicked state */
+.react-calendar__navigation__label:active {
+    background-color: transparent !important;
+    transform: scale(1.05) !important; /* Slightly smaller zoom when clicking */
+}
+
+.react-calendar__navigation__label:active .react-calendar__navigation__label__labelText {
+    color: black !important;
+    font-weight: 900 !important; /* Very bold when active */
+}
+
+/* arrows */
+.react-calendar__navigation button {
+    background-color: transparent !important;
+    border: none !important;
+    color: gray !important; /* Default arrow color */
+    transition: all 0.2s ease !important;
+}
+
+/* Hover effect for arrows */
+.react-calendar__navigation button:hover {
+    background-color: transparent !important;
+    color: black !important;
+    transform: scale(1.1) !important; /* Zoom effect */
+}
+
+/* Active/clicked state for arrows */
+.react-calendar__navigation button:active {
+    background-color: transparent !important;
+    color: black !important;
+    transform: scale(1.05) !important; /* Slightly smaller zoom when clicking */
+}
+
+/* Specific arrow buttons */
+.react-calendar__navigation__prev-button,
+.react-calendar__navigation__next-button,
+.react-calendar__navigation__prev2-button,
+.react-calendar__navigation__next2-button {
+    background-color: transparent !important;
+    color: gray !important;
+}
+
+.react-calendar__navigation__prev-button:hover,
+.react-calendar__navigation__next-button:hover,
+.react-calendar__navigation__prev2-button:hover,
+.react-calendar__navigation__next2-button:hover {
+    background-color: transparent !important;
+    color: black !important;
+    transform: scale(1.1) !important;
+}
+
+/* BIG CALENDER */
+.rbc-btn-group:first-child{
+    font-size: 13px !important;
+}
+.rbc-btn-group:first-child button{
+    border:none !important;
+    background-color:  #f1f0ff !important;
+    margin-left: 2px !important ;
+}
+.rbc-toolbar-label{
+    text-align: right !important;
+    padding: 0px 20px !important;
+}
+.rbc-btn-group:last-child{
+    font-size: 13px !important;
+}
+.rbc-btn-group:last-child button{
+    border:none !important;
+    background-color:  #f1f0ff !important;
+    margin-left: 2px !important ;
+}
+.rbc-toolar button.rbc-active{
+    background-color: #dbafed !important;
+    box-shadow: none !important;
+}
+.rbc-time-view{
+    border: 1px solid #74d4f7 !important;
+    border-radius: 10px !important;
+
+}
+.rbc-time-header{
+    display: none !important;
+}
+.rbc-time-content{
+    border-radius: 10px !important;
+    border-top: none !important
+}
+.rbc-time-gutter.rbc-time-column{
+    font-size: 12px !important;
+}
+.rbc-time-gutter.rbc-time-column .rbc-timeslot-group{
+    padding: 0px 20px !important;
+}
+
+.rbc-timeslot-group{
+    background-color: #f7fdff !important;
+    
+}
+.rbc-timeslot-slot{
+    font-size: 12px !important;
+
+}
+.rbc-event{
+    border:none !important;
+    color: black !important;
+    padding:10px !important;
+    margin: 10px !important;
+    width: 99% !important;
+}
+.rbc-event:nth-child(1){
+    background-color: #e2f8ff !important;
+}
+.rbc-event:nth-child(2){
+    background-color: #fefce8 !important;
+}
+.rbc-event:nth-child(3){
+    background-color: #f2f1ff !important;
+}
+.rbc-event:nth-child(4){
+    background-color: #fdf2fd !important;
+}
+.rbc-event:nth-child(5){
+    background-color: #e2f8ff !important;
+}
+.rbc-event:nth-child(6){
+    background-color: #fefce8 !important;
+}
+.rbc-event:nth-child(7){
+    background-color: #f2f1ff !important;
+}
+.rbc-event:nth-child(8){
+    background-color: #fdf2fb !important;
+}
+.rbc-event-label{
+    color: gray !important;
+    margin: bottom 2px !important;
+}
