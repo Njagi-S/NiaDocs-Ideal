@@ -174,7 +174,7 @@ export const studentsData = [
   {
     id: 6,
     studentId: "1234567890",
-    name: "Frankline Kiptoo",
+    name: "Francine Kiptoo",
     email: "f.kiptoo@hotmail.com",
     photo: "https://images.pexels.com/photos/712513/pexels-photo-712513.jpeg?auto=compress&cs=tinysrgb&w=1200",
     phone: "0767890123",
